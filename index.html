@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff6e8">
+  <meta name="description" content="Get a fresh, family-friendly joke from an external API.">
+  <title>Giggle Box — Random Joke Generator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="page-shell">
+    <header class="topbar">
+      <a class="brand" href="index.html" aria-label="Giggle Box home">
+        <span class="brand-icon" aria-hidden="true">😄</span>
+        <span>Giggle Box</span>
+      </a>
+      <span class="family-badge"><span aria-hidden="true">✨</span> Family-friendly laughs</span>
+    </header>
+
+    <section class="hero" aria-labelledby="page-title">
+      <div class="hero-copy">
+        <p class="eyebrow">A little laugh goes a long way</p>
+        <h1 id="page-title">Your daily dose of <span>giggles.</span></h1>
+        <p class="intro">Need a smile? Grab a fresh, family-friendly joke from the internet's joke box.</p>
+      </div>
+
+      <div class="joke-card" aria-live="polite" aria-busy="false">
+        <div class="card-topline">
+          <span class="category-pill" id="category">READY TO LAUGH?</span>
+          <span class="sparkle" aria-hidden="true">✦</span>
+        </div>
+        <div class="joke-content" id="joke-content">
+          <div class="joke-mark" aria-hidden="true">“</div>
+          <p class="joke-text" id="joke-text">Tap the button and let the giggles begin!</p>
+        </div>
+        <p class="error-message" id="error-message" role="alert" hidden></p>
+        <div class="card-actions">
+          <button class="icon-button" id="copy-button" type="button" aria-label="Copy joke" title="Copy joke" disabled>⧉</button>
+          <button class="icon-button favorite-button" id="favorite-button" type="button" aria-label="Save joke to favorites" title="Save to favorites" aria-pressed="false" disabled>♡</button>
+          <button class="joke-button" id="joke-button" type="button">
+            <span class="button-emoji" aria-hidden="true">🎲</span>
+            <span id="button-label">Tell me a joke</span>
+          </button>
+        </div>
+        <p class="source-note">Jokes provided by <a href="https://jokeapi.dev/" target="_blank" rel="noopener noreferrer">JokeAPI</a></p>
+      </div>
+
+      <div class="decoration decoration-star" aria-hidden="true">✦</div>
+      <div class="decoration decoration-smile" aria-hidden="true">☺</div>
+      <div class="decoration decoration-dot" aria-hidden="true"></div>
+    </section>
+
+    <footer class="footer">
+      <span>Made for curious minds and cheerful moments.</span>
+      <span class="footer-face" aria-hidden="true">☀️</span>
+    </footer>
+  </main>
+</body>
+</html>
